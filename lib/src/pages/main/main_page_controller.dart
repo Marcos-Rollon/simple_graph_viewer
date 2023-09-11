@@ -12,8 +12,8 @@ class MainPageController {
     color: Colors.lightBlue,
     sizeX: 1000,
   );
-  final volumeGraphController = LineGraphController(
-    title: "Volumen (ml)",
+  final flowInputController = LineGraphController(
+    title: "Flujo (ml/s)",
     maxY: 3000,
     color: Colors.redAccent,
     showMin: false,
@@ -46,6 +46,8 @@ class MainPageController {
     _websocketController.disconnect();
   }
 
+  // PRIVATE
+
   void _onGeneratorPoint(double point) {
     pplateau.value = point;
     pressureGraphController.addPoint(point);
@@ -58,10 +60,54 @@ class MainPageController {
         var data = SensorData.fromJson(rawSensorData);
         sensorData.value = data;
         pressureGraphController.addPoint(data.pressureSensorInput);
-        volumeGraphController.addPoint(data.flowSensorInput);
+        flowInputController.addPoint(data.flowSensorInput);
+
+        _calculateBreathData(data);
       } catch (e) {
         print(e);
       }
     });
+  }
+
+  // This should not be in this controller, it should come from the ventilator
+  double _maxPressure = 0;
+  double _minPressure = 10000;
+  double _prevPressure = 0;
+  bool previousUp = false;
+  bool currentUp = false;
+  void _calculateBreathData(SensorData data) {
+    final averagePressure =
+        data.pressureSensorInput + data.pressureSensorOutput / 2;
+
+    // Check if the new pressure is different enough
+    if ((_prevPressure - averagePressure).abs() > 2) {
+      if (_prevPressure < averagePressure) {
+        // We are going up
+        currentUp = true;
+      } else {
+        // We are going down
+        currentUp = false;
+      }
+      _prevPressure = averagePressure;
+      // If we were going down and suddenly we go up, take that as a new breath
+      // And only here we update the values for the ui
+      if (currentUp == true && previousUp == false) {
+        pplateau.value = _maxPressure;
+        peep.value = _minPressure < 10000 ? _minPressure : 0;
+        // Then reset
+        _maxPressure = 0;
+        _minPressure = 10000;
+      }
+      // Check for max
+      if (averagePressure > _maxPressure) {
+        _maxPressure = averagePressure;
+      }
+      // Check for min
+      if (averagePressure < _minPressure) {
+        _minPressure = averagePressure;
+      }
+
+      previousUp = currentUp;
+    }
   }
 }

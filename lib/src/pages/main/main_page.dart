@@ -35,16 +35,16 @@ class MainPage extends StatelessWidget {
                         units: "mbar",
                       ),
                     ),
-                    const SizedBox(height: AppSizes.elementSeparationM),
-                    Obx(
-                      () => HeadingIndicator(
-                        title: "Vtidal",
-                        value: _controller.vtidal.value,
-                        units: "ml/min",
-                        maxValue: 1800,
-                        minValue: 400,
-                      ),
-                    ),
+                    // const SizedBox(height: AppSizes.elementSeparationM),
+                    // Obx(
+                    //   () => HeadingIndicator(
+                    //     title: "Vtidal",
+                    //     value: _controller.vtidal.value,
+                    //     units: "ml/min",
+                    //     maxValue: 1800,
+                    //     minValue: 400,
+                    //   ),
+                    // ),
                   ],
                 ),
               )),
@@ -61,7 +61,7 @@ class MainPage extends StatelessWidget {
                       ),
                       const SizedBox(height: AppSizes.elementSeparationL),
                       LineGraph(
-                        controller: _controller.volumeGraphController,
+                        controller: _controller.flowInputController,
                       )
                     ],
                   ),
