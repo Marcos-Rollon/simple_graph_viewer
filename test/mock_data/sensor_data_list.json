@@ -1,0 +1,155 @@
+[
+    {
+        "pressureInput": 0.02861400604549935,
+        "pressureOutput": 0.9766804103645512,
+        "flowInput": 104.08046189543506,
+        "flowOutput": 0,
+        "valveIn": -0.2189511649050968,
+        "valveOut": -0.15034971054090218,
+        "timestamp": 109400
+    },
+    {
+        "pressureInput": -0.42841125485868226,
+        "pressureOutput": 0.8087990560235614,
+        "flowInput": 0,
+        "flowOutput": 0,
+        "valveIn": 0.12585209429288713,
+        "valveOut": -0.34820594841105557,
+        "timestamp": 109602
+    },
+    {
+        "pressureInput": 1.2008830499192333,
+        "pressureOutput": 1.915627987309053,
+        "flowInput": 0,
+        "flowOutput": 109.77288917915621,
+        "valveIn": -0.47563054313555964,
+        "valveOut": -0.3278066072400161,
+        "timestamp": 109803
+    },
+    {
+        "pressureInput": 1.7672967225278366,
+        "pressureOutput": 1.1022677934115137,
+        "flowInput": 95.39061987963437,
+        "flowOutput": 0,
+        "valveIn": -0.2635014405189746,
+        "valveOut": 0.07837221255877602,
+        "timestamp": 110003
+    },
+    {
+        "pressureInput": 1.9322835564509022,
+        "pressureOutput": -1.7265245947486907,
+        "flowInput": 66.05146903926948,
+        "flowOutput": 0,
+        "valveIn": 0.3640773658630796,
+        "valveOut": 0.37032989666801686,
+        "timestamp": 110204
+    },
+    {
+        "pressureInput": -1.8459577371683649,
+        "pressureOutput": -0.35666048856938115,
+        "flowInput": 22.172926886064843,
+        "flowOutput": 92.28796329106066,
+        "valveIn": 0.2431273217876435,
+        "valveOut": 0.2214401834593247,
+        "timestamp": 110404
+    },
+    {
+        "pressureInput": 1.5336255518137412,
+        "pressureOutput": -0.07649033973384611,
+        "flowInput": 0,
+        "flowOutput": 43.28072519673037,
+        "valveIn": 0.3545146419837353,
+        "valveOut": -0.24054035986735722,
+        "timestamp": 110605
+    },
+    {
+        "pressureInput": 1.6616561169672774,
+        "pressureOutput": -1.4637954041674641,
+        "flowInput": 38.87255804573536,
+        "flowOutput": 65.75833227651333,
+        "valveIn": 0.3937600309143847,
+        "valveOut": -0.42512176103954413,
+        "timestamp": 110806
+    },
+    {
+        "pressureInput": -0.38806840626177674,
+        "pressureOutput": -1.006398537037632,
+        "flowInput": 105.94813336444079,
+        "flowOutput": 0,
+        "valveIn": 0.053765950096174464,
+        "valveOut": 0.007926349359383522,
+        "timestamp": 111008
+    },
+    {
+        "pressureInput": 1.536522830971335,
+        "pressureOutput": 0.029460373709528476,
+        "flowInput": 0,
+        "flowOutput": 73.96943756069604,
+        "valveIn": -0.22482299947132267,
+        "valveOut": 0.449288544979475,
+        "timestamp": 111209
+    },
+    {
+        "pressureInput": 0.8298563964884105,
+        "pressureOutput": 1.0155961642115257,
+        "flowInput": 75.65965592967103,
+        "flowOutput": 77.31842304000762,
+        "valveIn": 0.1538472947135916,
+        "valveOut": -0.3097813997127554,
+        "timestamp": 111410
+    },
+    {
+        "pressureInput": 0.9400225504777051,
+        "pressureOutput": -1.59663077202306,
+        "flowInput": 53.92630895455406,
+        "flowOutput": 0,
+        "valveIn": 0.10856847498356048,
+        "valveOut": -0.4197263951672445,
+        "timestamp": 111611
+    },
+    {
+        "pressureInput": 1.2063251779455433,
+        "pressureOutput": 1.8094445065743692,
+        "flowInput": 0,
+        "flowOutput": 5.8430510454479645,
+        "valveIn": -0.41615694341932685,
+        "valveOut": -0.08296168150539818,
+        "timestamp": 111812
+    },
+    {
+        "pressureInput": -1.5971207116152772,
+        "pressureOutput": 0.684444642290206,
+        "flowInput": 71.17010525628024,
+        "flowOutput": 14.740989761778405,
+        "valveIn": -0.319949935065694,
+        "valveOut": 0.0027920161813708155,
+        "timestamp": 112013
+    },
+    {
+        "pressureInput": -1.7759439331166327,
+        "pressureOutput": 1.3735043276623387,
+        "flowInput": 0,
+        "flowOutput": 44.880013592181584,
+        "valveIn": 0.13978187734760006,
+        "valveOut": 0.471979016794827,
+        "timestamp": 112214
+    },
+    {
+        "pressureInput": -1.11298542493142,
+        "pressureOutput": -1.321000137572839,
+        "flowInput": 77.34382881103429,
+        "flowOutput": 0,
+        "valveIn": 0.39598444557255474,
+        "valveOut": 0.21632578054326057,
+        "timestamp": 112415
+    },
+    {
+        "pressureInput": 0.045414359935544546,
+        "pressureOutput": -1.567119989097442,
+        "flowInput": 116.91122240297362,
+        "flowOutput": 101.17790366619917,
+        "valveIn": -0.0612420555941815,
+        "valveOut": 0.3642330497969908,
+        "timestamp": 112616
+    }
+]
